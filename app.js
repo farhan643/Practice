@@ -122,8 +122,6 @@ deleteYes.addEventListener("click", () => {
   });
 });
 
-//Understand This Code!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 function saveToLocal(todo) {
   let todos;
   if (localStorage.getItem("todos") === null) {
@@ -160,7 +158,7 @@ function getTodos() {
     deleteBtn.classList.add("delete-btn");
     deleteBtn.innerHTML = "<i class='fas fa-trash'></i>";
     todoDiv.appendChild(deleteBtn);
-    //append to everytinh to todolists
+    //append everything to todolists
     todoLists.appendChild(todoDiv);
   });
 }
